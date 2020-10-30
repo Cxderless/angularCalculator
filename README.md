@@ -1,1 +1,1 @@
-Documents for my Angular Calculator website
+Documents for my Angular Calculator website (http://angularcalculator.com).
