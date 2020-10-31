@@ -1,0 +1,76 @@
+.base {
+    background: darkslategray;
+    margin-top: 5vh;
+    position: absolute;
+    left: -150px !important;
+    top: 150px !important;
+    border: 3px solid black;
+    width: 200%;
+}
+
+.maindisplay {
+    background: lightgrey;
+    height: 25vh;
+    padding: 5% !important;
+    font-size: 4rem;
+    text-align: right;
+    font-family: Courier, monospace;
+}
+
+.subdisplay {
+    border-bottom: 1px solid black;
+    height: 25%;
+    font-size: 2rem;
+}
+
+.keypad {
+    height: calc(200% / 3);
+
+}
+
+.keys {
+    margin: 0;
+    width: 100px;
+    background: whitesmoke;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.9;
+    border-style: solid;
+    border-width: 0.25px;
+}
+
+.keys:hover {
+    opacity: 1;
+    border-style: solid;
+    border-width: 0.25px;
+}
+
+.ackey {
+    color: red;
+    background: black;
+    border-style: solid;
+    border-width: 0.25px;
+}
+
+.equalkey {
+    color: white;
+    background-color: orangered;
+    border-style: solid;
+    border-width: 0.25px;
+}
+
+.numkey {
+    color: skyblue;
+    background-color: black;
+    border-style: solid;
+    border-width: 0.25px;
+}
+
+.opkey {
+    color: white;
+    background-color: black;
+    border-style: solid;
+    border-width: 0.25px;
+}

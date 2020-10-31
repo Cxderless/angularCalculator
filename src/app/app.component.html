@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="base">
+        <div class="maindisplay">
+          <div class="subdisplay" innerHTML="{{ subText }}"></div>
+          <div innerHTML="{{ mainText }}"></div>
+        </div>
+        <div class="keypad">
+          <table style="width: 100%;">
+            <tr>
+              <td class="keys opkey" colspan="2" (click)="pressKey('flip')">{{ flip }}</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('(')">(</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey(')')">)</td>
+              <td class="keys ackey" colspan="2" (click)="allClear()">AC</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('%')">%</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('/')">/</td>
+            </tr>
+            <tr>
+              <td class="keys opkey" colspan="1" (click)="pressKey('s')">sin</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('c')">cos</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('t')">tan</td>
+              <td class="keys numkey" colspan="1" (click)="pressKey('pi')">π</td>
+              <td class="keys numkey" colspan="1" (click)="pressKey('7')">7</td>
+              <td class="keys numkey" colspan="1" (click)="pressKey('8')">8</td>
+              <td class="keys numkey" colspan="1" (click)="pressKey('9')">9</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('*')">x</td>
+            </tr>
+            <tr>
+              <td class="keys opkey" colspan="1" (click)="pressKey('!')">x!</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('^ 2')">x<sup>2</sup></td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('^ 3')">x<sup>3</sup></td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('^ y')">x<sup>y</sup></td>
+              <td class="keys numkey" colspan="1" (click)="pressKey('4')">4</td>
+              <td class="keys numkey" colspan="1" (click)="pressKey('5')">5</td>
+              <td class="keys numkey" colspan="1" (click)="pressKey('6')">6</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('-')">-</td>
+            </tr>
+            <tr>
+              <td class="keys opkey" colspan="1" (click)="pressKey('1/x')">1/x</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('q')">√x</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('x q y')"><sup>x</sup>√y</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('EE')">EE</td>
+              <td class="keys numkey" colspan="1" (click)="pressKey('3')">3</td>
+              <td class="keys numkey" colspan="1" (click)="pressKey('2')">2</td>
+              <td class="keys numkey" colspan="1" (click)="pressKey('1')">1</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('+')">+</td>
+            </tr>
+            <tr>
+              <td class="keys opkey" colspan="1" (click)="pressKey('o')">log</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('n')">ln</td>
+              <td class="keys opkey" colspan="1" (click)="pressKey('e^x')">e<sup>x</sup></td>
+              <td class="keys numkey" colspan="1" (click)="pressKey('e')">e</td>
+              <td colspan="2" class="keys numkey" colspan="2" (click)="pressKey('0')">0</td>
+              <td class="keys numkey" colspan="1" (click)="pressKey('.')">.</td>
+              <td class="keys equalkey" colspan="1" (click)="getAnswer()">=</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
